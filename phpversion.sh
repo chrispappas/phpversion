@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+# ------------------------------------------------------------------
+# checks for a .phpversion file with a numeric version (eg. 8.3) 
+# and runs that version for this command
+# if the .phpversion file is not present, use default system php
+# 
+# github.com/chrispappas/phpversion
+# ------------------------------------------------------------------
+
 set -euo pipefail
 
 if ! [ -f .phpversion ]; then
